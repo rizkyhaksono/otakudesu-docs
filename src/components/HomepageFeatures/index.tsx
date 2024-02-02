@@ -12,21 +12,21 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Easy to Fetch",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>Data anime is based on Otakudesu, this is just shows the data only view on JSON.</>,
+    description: <>Data anime is based on Otakudesu, sure it is up to date (for now).</>,
   },
   {
-    title: "Based on Queries",
+    title: "Up to 10 Endpoints",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.
+        Otakudesu Backend API&apos;s do the media also. Go ahead and explore the <code>docs</code> on /docs/apis.
       </>
     ),
   },
   {
-    title: "Friendly to Maintaine",
+    title: "Friendly to Maintain",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: <>Extend or customize the API or change the structures based on what you want.</>,
+    description: <>Becase we use Next.js 14 by API route. It is powerful function by NextResponse</>,
   },
 ];
 
