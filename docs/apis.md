@@ -2,9 +2,15 @@
 sidebar_position: 1
 ---
 
-# Home
+# APIs
 
 Let's discover **Otakudesu API**.
+
+:::tip Open Contributing
+
+Feel free to PR the project.
+
+:::
 
 ## Getting Started
 
@@ -41,7 +47,7 @@ yarn install
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-## Start your site
+## Pull Project
 
 Run the development server:
 

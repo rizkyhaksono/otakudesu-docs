@@ -4,40 +4,69 @@ sidebar_position: 1
 
 # Home
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+The **route** is [https://otakudesube.natee.my.id/api/home](https://otakudesube.natee.my.id/api/home) to show a **home data anime** include:
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+- `On Going Anime` → `ongoing_anime`
+- `Complete Anime` → `complete_anime`
 
-## Create your first React Page
+## On Going Anime
 
-Create a file at `src/pages/my-react-page.js`:
+Example data `ongoing_anime`:
 
-```jsx title="src/pages/my-react-page.js"
-import React from "react";
-import Layout from "@theme/Layout";
-
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
+```jsx title="https://otakudesube.natee.my.id/api/home"
+{
+  "data": {
+    "ongoing_anime": [
+      {
+        "title": "Metallic Rouge",
+        "slug": "metal-rouge-sub-indo",
+        "poster": "https://otakudesu.media/wp-content/uploads/2024/01/Metallic-Rouge-Sub-Indo.jpg",
+        "current_episode": "Episode 3",
+        "release_day": "Kamis",
+        "newest_release_date": "25 Jan",
+        "otakudesu_url": "https://otakudesu.media/anime/metal-rouge-sub-indo/"
+      },
+      {
+        "title": "Mahou Shoujo ni Akogarete",
+        "slug": "mahou-shoujo-akogarete-sub-indo",
+        "poster": "https://otakudesu.media/wp-content/uploads/2024/01/139414l.jpg",
+        "current_episode": "Episode 4",
+        "release_day": "Kamis",
+        "newest_release_date": "25 Jan",
+        "otakudesu_url": "https://otakudesu.media/anime/mahou-shoujo-akogarete-sub-indo/"
+      },
+    ],
+  }
 }
 ```
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+## Complete Anime
 
-## Create your first Markdown Page
+Example data `complete_anime`:
 
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
+```jsx title="https://otakudesube.natee.my.id/api/home"
+{
+  "data": {
+   "complete_anime": [
+      {
+        "title": "Dr. Stone Season 3 Part 2",
+        "slug": "drstn-s3-p2-sub-indo",
+        "poster": "https://otakudesu.media/wp-content/uploads/2024/01/Dr.-Stone-Season-3-Part-2-Sub-Indo.jpg",
+        "episode_count": "11",
+        "rating": "8.35",
+        "last_release_date": "15 Jan",
+        "otakudesu_url": "https://otakudesu.media/anime/drstn-s3-p2-sub-indo/"
+      },
+      {
+        "title": "Shy",
+        "slug": "shy-sub-indo",
+        "poster": "https://otakudesu.media/wp-content/uploads/2024/01/Shy-Sub-Indo.jpg",
+        "episode_count": "12",
+        "rating": "6.75",
+        "last_release_date": "15 Jan",
+        "otakudesu_url": "https://otakudesu.media/anime/shy-sub-indo/"
+      }
+    ]
+  }
+}
 ```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
