@@ -1,34 +1,34 @@
-import clsx from "clsx";
-import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
+import clsx from "clsx"
+import Heading from "@theme/Heading"
+import styles from "./styles.module.css"
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<"svg">>;
-  description: JSX.Element;
-};
+  title: string
+  Svg: React.ComponentType<React.ComponentProps<"svg">>
+  description: JSX.Element
+}
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Fetch",
+    title: "Fetch every 12 hours",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
-    description: <>Data anime is based on Otakudesu, sure it is up to date (for now).</>,
+    description: <>Using GitHub action so don't worry about latest anime.</>,
   },
   {
-    title: "Up to 10 Endpoints",
+    title: "More than 5 endpoints",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Otakudesu Backend API&apos;s do the media also. Go ahead and explore the <code>docs</code> on /docs/apis.
+        Otakudesu Backend API&apos;s do media also. Go ahead explore the <code>docs</code> on /docs/apis.
       </>
     ),
   },
   {
-    title: "Friendly to Maintain",
+    title: "Meta pages",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: <>Becase we use Next.js 14 by API route. It is powerful function by NextResponse</>,
+    description: <>Fetch filter. Not all datas.</>,
   },
-];
+]
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
@@ -41,7 +41,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures(): JSX.Element {
@@ -55,5 +55,5 @@ export default function HomepageFeatures(): JSX.Element {
         </div>
       </div>
     </section>
-  );
+  )
 }

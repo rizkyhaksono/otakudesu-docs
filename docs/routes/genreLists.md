@@ -1,22 +1,18 @@
 ---
-sidebar_position: 9
+sidebar_position: 6
 ---
 
 # Genre List
 
-Otakudesu supports **[Genre](https://otakudesube.natee.my.id/api/genre)** and a few **additional features**.
+The **route** is [https://otakudesube.natee.my.id/api/genre](https://otakudesube.natee.my.id/api/genre) to show a **genre data anime** include:
+
+- `https://otakudesube.natee.my.id/api/genre}` → Show all genre anime data.
 
 ## Genre Data
 
 Example of [Genre List](https://otakudesube.natee.my.id/api/genre):
 
-:::danger Still Maintenance
-
-The url still direct to original source
-
-:::
-
-```text title="https://otakudesube.natee.my.id/api/genre"
+```jsx title="https://otakudesube.natee.my.id/api/genre"
 {
   "data": [
     {

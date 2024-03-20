@@ -6,12 +6,12 @@ sidebar_position: 1
 
 The **route** is [https://otakudesube.natee.my.id/api/home](https://otakudesube.natee.my.id/api/home) to show a **home data anime** include:
 
-- `On Going Anime` → `ongoing_anime`
-- `Complete Anime` → `complete_anime`
+- `https://otakudesube.natee.my.id/api/ongoing-anime/{page}` → Show all on going anime data.
+- `https://otakudesube.natee.my.id/api/complete-anime/{page}` → Show all complete anime data.
 
 ## On Going Anime
 
-Example data `ongoing_anime`:
+Example data `/ongoing_anime/`:
 
 ```jsx title="https://otakudesube.natee.my.id/api/home"
 {

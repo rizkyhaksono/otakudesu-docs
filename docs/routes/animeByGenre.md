@@ -1,156 +1,78 @@
 ---
-sidebar_position: 10
+sidebar_position: 7
 ---
 
 # Anime By Genre
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+The **route** is [https://otakudesube.natee.my.id/api/genre/fantasy?page=1](https://otakudesube.natee.my.id/api/genre/fantasy?page=1) to show a **anime data by genre** include:
 
-## Front Matter
+- `https://otakudesube.natee.my.id/api/genre/{slug}?page={page}` → Show all anime data by genre.
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+## Anime by Genre
 
-```text title="my-doc.md"
-// highlight-start
----
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
+Example data `/genre/{slug}?page={page}`
 
-## Markdown heading
-
-Markdown text with [links](./hello.md)
-```
-
-## Links
-
-Regular Markdown links are supported, using url paths or relative file paths.
-
-```md
-Let's see how to [Create a page](/docs/routes/home.md).
-```
-
-```md
-Let's see how to [Create a page](./home.md).
-```
-
-**Result:** Let's see how to [Create a page](./home.md).
-
-## Images
-
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
-
-## Code Blocks
-
-Markdown code blocks are supported with Syntax highlighting.
-
-````md
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+```jsx title="https://otakudesube.natee.my.id/api/genre/fantasy?page=1"
+{
+    "data": {
+        "anime": [
+            {
+                "title": "One Piece",
+                "slug": "op-sub-indo",
+                "poster": "https://otakudesu.cloud/wp-content/uploads/2021/05/One-Piece-Sub-Indo.jpg",
+                "rating": "8.54",
+                "episode_count": "?",
+                "season": "Fall 1999",
+                "studio": "Toei Animation",
+                "genres": [
+                    {
+                        "name": "Action",
+                        "slug": "action",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/action/"
+                    },
+                    {
+                        "name": "Adventure",
+                        "slug": "adventure",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/adventure/"
+                    },
+                    {
+                        "name": "Comedy",
+                        "slug": "comedy",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/comedy/"
+                    },
+                    {
+                        "name": "Drama",
+                        "slug": "drama",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/drama/"
+                    },
+                    {
+                        "name": "Fantasy",
+                        "slug": "fantasy",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/fantasy/"
+                    },
+                    {
+                        "name": "Shounen",
+                        "slug": "shounen",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/shounen/"
+                    },
+                    {
+                        "name": "Super Power",
+                        "slug": "super-power",
+                        "otakudesu_url": "https://otakudesu.cloudhttps://otakudesu.cloud/genres/super-power/"
+                    }
+                ],
+                "synopsis": "Dulu, ada seorang bajak laut terkenal di seluruh lautan bernama Gol D. Roger. Ia merupakan seorang raja bajak laut yang telah berlayar mengarungi seluruh Grand Line, sayangnya ia ditangkap pemerintah dan telah dieksekusi mati. Sesaat sebelum kematiannya, Ia mengumumkan kepada dunia bahwa dirinya menyimpan sebuah harta karun bernama One Piece, sebuah harta karun yang kini menjadi incaran seluruh bajak laut yang ada di dunia.Di Era Bajak Laut saat ini, ada seorang remaja bernama Monkey D. Luffy yang memiliki cita-cita untuk menjadi seorang Raja Bajak Laut. Namun Luffy sadar bahwa ia tidak bisa melakukannya sendiri, sembari dalam perjalanan ia juga mencari kru dan bertemu dengan teman-temannya yang baru. Berbeda dengan bajak laut lain yang ganas dan jahat, Luffy bersama teman-temannya berlayar murni atas dasar petualangan serta mencari tempat tempat baru yang akan muncul di hadapan mereka.Di perjalanan inilah cerita mereka dimulai, mampukan Luffy bersama teman-temannya mencapai impian mereka?(Info: Episode sebelumnya akan ditambahkan secara berkala)",
+                "otakudesu_url": "https://otakudesu.cloud/anime/op-sub-indo/"
+            },
+        ],
+        "pagination": {
+            "current_page": 1,
+            "last_visible_page": 32,
+            "has_next_page": true,
+            "next_page": 2,
+            "has_previous_page": false,
+            "previous_page": null
+        }
+    }
 }
 ```
-````
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts:
-
-```md
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-```
-
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
-## MDX and React Components
-
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
-
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-```
-
-export const Highlight = ({ children, color }) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: "20px",
-      color: "#fff",
-      padding: "10px",
-      cursor: "pointer",
-    }}
-onClick={() => {
-alert(`You clicked the color ${color} with label ${children}`);
-}}
-
->
-
-    {children}
-
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
