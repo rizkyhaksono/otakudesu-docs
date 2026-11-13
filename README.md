@@ -4,6 +4,8 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Installation
 
+Requires Node.js 20 or newer (Docusaurus 3.10).
+
 ```
 $ yarn
 ```
