@@ -1,0 +1,13 @@
+{
+  "name": "braces",
+  "version": "3.0.4",
+  "description": "Local braces 3.0.3 with a nesting-depth cap. Official 3.0.3 is the newest registry release and is what GuardRails flags.",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.3"
+  },
+  "dependencies": {
+    "fill-range": "^7.1.1"
+  }
+}
